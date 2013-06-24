@@ -97,7 +97,7 @@
 				
 				
 				  if (response.status === 'connected') {
-					   alert("FB connect !");
+					   //alert("FB connect !");
 			           var uid = response.authResponse.userID;
 				       var Access_Token = response.authResponse.accessToken;
 			           listFriends();
@@ -139,7 +139,7 @@
 				第四步：
 				*/
 
-                alert('List friends!');
+                //alert('List friends!');
 				FB.api('/me/friends', function(response) {
                   
 				
