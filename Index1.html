@@ -75,7 +75,7 @@
  			var js, fjs = d.getElementsByTagName(s)[0];
  			if (d.getElementById(id)) return;
  			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=588878567811516";
+			js.src = "//connect.facebook.net/zh_TW/all.js";//#xfbml=1&appId=588878567811516";
  			fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
@@ -94,19 +94,9 @@
 						Access_Token = response.authResponse.accessToken;
 						//authResponse returns the list such as below
 						//If you store these informations, you can further use them to promote your website
-						/* the form returned
-						{
-							status: 'connected',
-							authResponse: {
-								accessToken: '...',
-								expiresIn:'...',
-								signedRequest:'...',
-								userID:'...'
-							}
-						}
-						*/
+						
 	
-						listFriends();//Check that if the user is connected with the facebook. If yes, call the next function.
+						listFriends();
 					} else if (response.status === 'not_authorized') {
 					// the user is logged in to Facebook, but not connected to the app
 						alert("Please authorize this app!");
