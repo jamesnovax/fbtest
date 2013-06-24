@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Facebook Friends Lists</title>
-		<link rel="stylesheet" type="text/css" href="FriendLists.css"/>
+		<link rel="stylesheet" type="text/css" href="CSS/FriendLists.css"/>
 		<link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
 		<script src="javascript/jquery.min.js"></script>
 	</head>
@@ -96,7 +96,7 @@
 					
 		          var fId = response['data'][i]['id'];
 		          var fName = response['data'][i]['name'];
-		         $("<div onclick='changeInfo("+fId+");'><img src='https://graph.facebook.com/"+ fId + "/picture' /><span>"+fName+"                  </span></div>").appendTo("#FillInList");
+		         $("<div onclick='changeInfo("+fId+");'><img src='https://graph.facebook.com/"+ fId + "/picture' /><span>"+fName+"                  </span></div>").appendTo("#FriendList");
 
 		              i++;
 	             }
