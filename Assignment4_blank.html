@@ -79,6 +79,20 @@
 				/*第三步完*/
 				
 			}
+
+            function changeInfo(friends){
+				
+				FB.api("/"+friends, function(response) {
+					
+					$("#name").text(response.name);
+					$("#gender").text(response.gender);
+					$("#birth").text(response.birthday);
+					$("#loca").text(response.location.name);
+					
+				});
+				
+			}
+
 			
 			function listFriends(){
 				
