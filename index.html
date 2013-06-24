@@ -100,7 +100,7 @@
 					
 		          var fId = response['data'][i]['id'];
 		          var fName = response['data'][i]['name'];
-		         $("<div onclick='changeInfo("+fId+");'><img src='https://graph.facebook.com/"+ fId + "/picture' /><span>"+fName+"</span></div>").appendTo("#FillInList");
+		         $("<div onclick='changeInfo("+fId+");'><img src='https://graph.facebook.com/"+ fId + "/picture' /><span>"+fName+"</span></div>").appendTo("#FriendList");
 
 		              i++;
 	             }
@@ -182,10 +182,7 @@
 				
 			}
 		</script>
-			<div id="FriendList">
-				<h1>Your Friends</h1>
-				<ul id="FillInList"> </ul>
-			</div>
+			<div id="FriendList" class="connectSort">
 			<div id="infoDiv">
 				<span>姓名：</span><span id="name"></span><br/>
 				<span>性別：</span><span id="gender"></span><br/>
