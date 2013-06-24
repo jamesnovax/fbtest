@@ -109,6 +109,7 @@
 	              while(response['data'][i] != null){
 					
 		          var fId = response['data'][i]['id'];
+                  alert(fId);
 		          var fName = response['data'][i]['name'];
 		         $("<div onclick='changeInfo("+fId+");'><img src='https://graph.facebook.com/"+ fId + "/picture' /><span>"+fName+"</span></div>").appendTo("#FillInList");
 
