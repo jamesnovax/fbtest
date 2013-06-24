@@ -7,11 +7,18 @@ body{
 	margin:0px auto;
 	width:250px;
 	text-align:left;
-	height:100%;
-	overflow:auto;
+	height:93%;
+	border:1px solid;
 }
-			
-#FriendList div{
+		
+#FriendList ul{
+	overflow:auto;
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+		
+#FriendList ul div{
 	background:#3b5998;
 	margin-bottom:1px;
 	color:#FFFFFF;
@@ -27,7 +34,7 @@ body{
 	font-size:12px;
 }
 			
-#FriendList div:hover{
+#FriendList ul div:hover{
 	background:#DFDFDF;
 	color:#3b5998;
 	cursor:hand;
@@ -38,6 +45,15 @@ body{
 	width:200px;
 	height:100%;
 	position:relative;
+}
+
+#infoDiv span:nth-child(1){
+	margin-top:50px;
+}
+
+#infoDiv span{
+	display: block;
+	margin:3px 0px 3px 5px;
 }
 			
 #ControlList{
@@ -81,16 +97,15 @@ body{
 			
 #GroupList div{
 	width:250px;
-	height:225px;
+	height:60%;
 	float:left;
-	overflow:auto;
 	margin:2px;
 	margin-top:0px;
 	border:1px solid;
 }
 			
 #GroupList ul{
-	height:100%;
+	height:88%;
 	margin:0px;
 	padding:0px;
 	overflow:auto;
@@ -120,16 +135,6 @@ body{
 	cursor:hand;
 }
 
-#friendsInfo{
-	position:absolute;
-	bottom:2px;;
-}
-
-#friendsInfo span{
-	display:inline-block;
-	margin:3px 0px 3px 0px;
-}
-			
 h1{
 	font-size:15px;
 	height:30px;
