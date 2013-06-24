@@ -21,9 +21,7 @@
 				
 				});*/
 				
-			function change(para){
-				switch (para){
-					case 1:
+			function AddFriend(){
 						var temptitle = prompt("Enter the name of your new friend list");
 						
 						if(temptitle){
@@ -44,12 +42,10 @@
 							alert("Null list name is not allowed, please check again.");
 							
 						}
-					break;
-					case 2:
-						
-					break;
-				}
-			}
+					
+		   }
+           function DelFriend(){	
+		   }
 		</script>
 	</head>
 	<body>
@@ -223,8 +219,8 @@
 			</div>
 			<div id="infoDiv">
 				<ul id="ControlList">
-					<li id="create" onclick="change(1);"><span>Create</span></li>
-					<li id="delete" class="sortGroup dealGroup"onclick="change(2);"><span>Delete</span></li>
+					<li id="create" onclick="AddFriend();"><span>Create</span></li>
+					<li id="delete" onclick="DelFriend();"><span>Delete</span></li>
 				</ul>
 				<div id="friendsInfo">
 					<span>姓名：</span><span id="name"></span><br/>
