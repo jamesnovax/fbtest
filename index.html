@@ -61,8 +61,8 @@
 				
 				
 				
-				//FB.Event.subscribe('auth.login', function(response) {
-				FB.getLoginStatus(function(response) {
+				FB.Event.subscribe('auth.login', function(response) {
+				//FB.getLoginStatus(function(response) {
 				
 				if (response.status === 'connected') {
 					//alert("FB connect !");
